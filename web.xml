@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>App</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>Inicio.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Compilador</display-name>
+    <servlet-name>Compilador</servlet-name>
+    <servlet-class>com.app.jsps.servlet.Compilador</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Compilador</servlet-name>
+    <url-pattern>/Contenido</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Estatico</display-name>
+    <servlet-name>Estatico</servlet-name>
+    <servlet-class>com.app.jsps.servlet.Estatico</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Estatico</servlet-name>
+    <url-pattern>/Estatico</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Dinamico</display-name>
+    <servlet-name>Dinamico</servlet-name>
+    <servlet-class>com.app.jsps.servlet.Dinamico</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Dinamico</servlet-name>
+    <url-pattern>/Dinamico</url-pattern>
+  </servlet-mapping>
+</web-app>
